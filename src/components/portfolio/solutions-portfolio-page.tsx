@@ -65,7 +65,7 @@ export function SolutionsPortfolioPage() {
             title="Solutions"
             titleAccent
             subtitle="Creative, useful, considered, durable"
-            illustration="/illustration-approval.webp"
+            illustration="/illustration-solutions.webp"
             illustrationAlt="Black line illustration of a medium-short-haired woman giving a thumbs-up beside a laptop"
           />
 

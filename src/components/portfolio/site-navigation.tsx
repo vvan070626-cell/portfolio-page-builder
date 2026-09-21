@@ -1,6 +1,8 @@
 "use client";
 
+import { useState, type MouseEvent } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Menu, Search } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -25,6 +27,26 @@ const navigationItems = [
 ] as const;
 
 export function SiteNavigation({ activePage }: SiteNavigationProps) {
+  const router = useRouter();
+  const [isReturningHome, setIsReturningHome] = useState(false);
+
+  function handleHomeSpotClick(event: MouseEvent<HTMLAnchorElement>) {
+    event.preventDefault();
+
+    if (isReturningHome) {
+      return;
+    }
+
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduceMotion) {
+      router.push("/");
+      return;
+    }
+
+    setIsReturningHome(true);
+    window.setTimeout(() => router.push("/"), 240);
+  }
+
   return (
     <header className="fixed inset-x-0 top-0 z-50 h-14 border-b border-transparent bg-background/95 backdrop-blur-[2px]">
       <div className="flex h-full w-full items-center justify-between px-5 sm:px-7 lg:px-8">
@@ -39,7 +61,20 @@ export function SiteNavigation({ activePage }: SiteNavigationProps) {
         </Link>
 
         <nav className="hidden items-center gap-7 text-[20px] leading-none md:flex" aria-label="Primary navigation">
-          <span className="size-2 rounded-full bg-foreground" aria-hidden="true" />
+          {activePage === "solutions" ? (
+            <Link
+              href="/"
+              className={cn("portfolio-home-spot", isReturningHome && "portfolio-home-spot-leaving")}
+              aria-label="Return to the profile page"
+              onClick={handleHomeSpotClick}
+            >
+              <span aria-hidden="true" />
+            </Link>
+          ) : (
+            <span className="portfolio-home-spot portfolio-home-spot-static" aria-hidden="true">
+              <span />
+            </span>
+          )}
           {navigationItems.map((item) => (
             <Link
               key={item.href}

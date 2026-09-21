@@ -30,3 +30,6 @@ Digital paper: an almost-white canvas, dense black typography, sparse black-line
 - Navigation weight identifies the current page
 - Links use small opacity, color, or lift feedback
 - Optional movement is disabled under reduced-motion preferences
+- Navigation weight identifies the current page
+- The black navigation spot on solutions is a home control with a restrained expand-and-fade return cue
+- Links use small opacity, color, or lift feedback

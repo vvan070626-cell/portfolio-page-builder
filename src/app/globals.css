@@ -815,3 +815,53 @@ body {
     transform: none;
   }
 }
+.portfolio-home-spot {
+  display: inline-grid;
+  width: 1.9rem;
+  height: 1.9rem;
+  place-items: center;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 220ms var(--ease-out-expo);
+}
+
+.portfolio-home-spot > span {
+  width: 0.72rem;
+  height: 0.72rem;
+  border-radius: inherit;
+  background: var(--foreground);
+  transition: transform 220ms var(--ease-out-expo), background-color 220ms var(--ease-out);
+}
+
+.portfolio-home-spot:not(.portfolio-home-spot-static):hover {
+  transform: scale(1.14);
+}
+
+.portfolio-home-spot:not(.portfolio-home-spot-static):hover > span,
+.portfolio-home-spot:not(.portfolio-home-spot-static):focus-visible > span {
+  transform: scale(1.45);
+  background: var(--foreground);
+}
+
+.portfolio-home-spot:not(.portfolio-home-spot-static):active {
+  transform: scale(0.82);
+}
+
+.portfolio-home-spot-leaving {
+  pointer-events: none;
+  transform: scale(1.35);
+}
+
+.portfolio-home-spot-leaving > span {
+  transform: scale(2.1);
+  opacity: 0;
+}
+
+.portfolio-home-spot:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.portfolio-home-spot-static {
+  cursor: default;
+}
