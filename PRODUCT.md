@@ -6,11 +6,11 @@
 
 ## What this is
 
-A placeholder-ready personal portfolio inspired by a digital-paper interface, with editorial spacing, restrained motion, and a clear contact path.
+A placeholder-ready personal portfolio inspired by a digital-paper interface, with three scroll-linked illustration states and a clear contact path.
 
 ## What it enables
 
-Give the owner a presentable personal website whose content can be replaced without changing the visual system.
+Give the owner a presentable personal website whose identity, offer, and contact details can be replaced without changing the visual system.
 
 ## Primary user
 
@@ -18,11 +18,11 @@ Prospective clients, collaborators, and people evaluating the owner's work and c
 
 ## What exists today
 
-Responsive fixed navigation with a mobile menu - Introductory hero with an original replaceable line-art visual - Three placeholder practice descriptions - Prominent email contact action and footer navigation - Black-and-white digital-paper visual language with a single orange accent - Scroll-triggered section entrances, header scroll feedback, hover states, and subtle pointer-responsive artwork - Reduced-motion support for all non-essential movement
+Responsive fixed navigation with active-section feedback and a mobile menu - Three full-height story states for profile, solutions, and contact - Three original black-line illustrations featuring a medium-short-haired woman - Sticky desktop illustration transitions synchronized to scrolling - Six generic solution groups and placeholder contact information - Black-and-white digital-paper visual language with a single orange accent - Reduced-motion support for all non-essential movement
 
 ## Brand commitments & durable constraints
 
-Keep all third-party reference content replaced with generic placeholders - Preserve the digital-paper visual language and restrained interaction style - Do not use Google-hosted fonts
+Keep all third-party reference content replaced with generic placeholders - Use original illustration assets rather than tracing or copying the reference artwork - Preserve the digital-paper visual language and restrained interaction style - Do not use Google-hosted fonts
 
 - **This project already HAS a committed visual world — do NOT offer a design picker.** `.project/DESIGN_SYSTEM.md` records a direction someone decided on, and the code, tokens and components are built around it. Read it, inherit it, and make the requested change inside it. Dealing six alternative worlds here offers to throw away a working design system nobody asked you to replace.
 - **Tailoring is not redesigning.** "Make it about my business", new copy, a different logo, swapped imagery, a brand colour — all of that lands INSIDE the committed world. Change what was asked for and leave the direction alone.
@@ -35,7 +35,7 @@ Keep all third-party reference content replaced with generic placeholders - Pres
 
 ## Positioning
 
-A placeholder-ready personal portfolio inspired by a digital-paper interface, with editorial spacing, restrained motion, and a clear contact path.
+A placeholder-ready personal portfolio inspired by a digital-paper interface, with three scroll-linked illustration states and a clear contact path.
 
 ## Operating Context
 
@@ -43,7 +43,7 @@ Responsive web, built unattended in one pass. Task mode: Experience.
 
 ## Evidence on Hand
 
-Responsive fixed navigation with a mobile menu - Introductory hero with an original replaceable line-art visual - Three placeholder practice descriptions - Prominent email contact action and footer navigation - Black-and-white digital-paper visual language with a single orange accent - Scroll-triggered section entrances, header scroll feedback, hover states, and subtle pointer-responsive artwork - Reduced-motion support for all non-essential movement
+Responsive fixed navigation with active-section feedback and a mobile menu - Three full-height story states for profile, solutions, and contact - Three original black-line illustrations featuring a medium-short-haired woman - Sticky desktop illustration transitions synchronized to scrolling - Six generic solution groups and placeholder contact information - Black-and-white digital-paper visual language with a single orange accent - Reduced-motion support for all non-essential movement
 
 ## Product Principles
 

@@ -1,6 +1,6 @@
 ---
 name: "Personal Portfolio"
-description: "A placeholder-ready personal portfolio inspired by a digital-paper interface, with editorial spacing, restrained motion, and a clear contact path."
+description: "A placeholder-ready personal portfolio inspired by a digital-paper interface, with three scroll-linked illustration states and a clear contact path."
 colors:
   background: "oklch(0.992 0.002 95)"
   foreground: "oklch(0.18 0.004 80)"
@@ -28,7 +28,7 @@ colors:
   sidebar-primary: "oklch(0.74 0.18 64)"
 typography:
   mono:
-    fontFamily: "\"DM Mono\", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+    fontFamily: "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"Liberation Mono\", monospace"
 rounded:
   sm: "calc(var(--radius) * 0.6)"
   md: "calc(var(--radius) * 0.8)"
@@ -43,7 +43,7 @@ rounded:
 
 ## Overview
 
-Digital paper: an almost-white canvas, dense black typography, monospaced supporting text, open spacing, and one orange action signal.
+Digital paper: an almost-white canvas, dense black typography, sparse black-line illustrations, open spacing, and one orange action signal.
 
 ## Colors
 
@@ -57,10 +57,11 @@ Declared in `globals.css` as `--color-*` and mirrored in the frontmatter. Use th
 
 ## Typography
 
-- Headings and body: self-hosted Montserrat variable family with strong weight contrast
-- Supporting labels: self-hosted DM Mono
+- Display headings: self-hosted Montserrat variable family
+- Navigation and body: self-hosted Lato
+- Supporting labels: system monospace stack with reference-matched sizing and spacing
 
-- Mono: `"DM Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`
+- Mono: `ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace`
 
 ## Shapes
 
