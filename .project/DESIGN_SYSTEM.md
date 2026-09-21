@@ -1,30 +1,26 @@
-<!-- OWNER: Design / Build · READERS: Build, Landing, SEO -->
-# Design System
-
-The **committed** visual direction. Build / Landing / Design MUST follow this so the
-product stays consistent. Change it deliberately, and commit the change.
+# Personal Portfolio Design System
 
 ## Direction
-{{one-line aesthetic — e.g. "clean editorial, trust-blue, generous whitespace"}}
+Digital paper: an almost-white canvas, dense black typography, monospaced supporting text, open spacing, and one orange action signal.
 
 ## Palette
-| Token | Value |
-|-------|-------|
-| background | {{#fff}} |
-| surface | {{}} |
-| text / muted | {{}} |
-| border | {{}} |
-| primary | {{}} |
-| accent | {{}} |
-| success / warning / danger | {{}} |
+- Background: near-white paper
+- Foreground: soft near-black
+- Muted surfaces: pale neutral grey
+- Primary accent: clear orange
+- Borders: light graphite grey
 
 ## Typography
-- Headings: {{font}}
-- Body: {{font}}
+- Headings and body: compact system sans-serif stack with strong weight contrast
+- Supporting labels: system monospace stack
 
-## Tokens & primitives
-- Radius / shadow / spacing rhythm: {{}}
-- Shared components: {{Button, Card, Input, …}}
+## Layout
+- Fixed, low-profile navigation
+- Wide editorial hero with asymmetric text and illustration columns
+- Three-column practice section that becomes a single mobile column
+- Generous vertical spacing and minimal container decoration
 
-## Voice & tone
-{{how the product speaks — e.g. "plain, confident, no hype"}}
+## Interaction
+- Short opacity and scale feedback
+- Smooth anchor navigation with reduced-motion support
+- Mobile navigation uses the shared sheet pattern

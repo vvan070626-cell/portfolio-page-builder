@@ -1,22 +1,27 @@
 <!-- OWNER: Build (with the user) · READERS: every agent · READ THIS FIRST -->
-# {{PROJECT_NAME}}
+# Personal Portfolio
 
-**One-liner:** {{what it is, in one sentence}}
+**One-liner:** A placeholder-ready personal portfolio inspired by a digital-paper interface, with a clear introduction, practice overview, and contact path.
 
 ## Goal
-{{the outcome the user actually wants}}
+Give the owner a presentable personal website whose content can be replaced without changing the visual system.
 
 ## Target users
-{{who it's for}}
+Prospective clients, collaborators, and people evaluating the owner's work and capabilities.
 
 ## Status
-- Stage: {{idea | building | live}}
-- Live URL: {{url or —}}
-- Repo: {{repo or —}}
+- Stage: building
+- Live URL: —
+- Repo: —
 
 ## What exists today
-<!-- Kept current by the Build agent after each build -->
-{{high-level list of built features}}
+- Responsive fixed navigation with a mobile menu
+- Introductory hero with an original replaceable line-art visual
+- Three placeholder practice descriptions
+- Prominent email contact action and footer navigation
+- Black-and-white digital-paper visual language with a single orange accent
 
 ## Constraints / must-nots
-{{anything every agent must respect — brand rules, no-gos, tech limits}}
+- Keep all third-party reference content replaced with generic placeholders
+- Preserve the digital-paper visual language and restrained interaction style
+- Do not use Google-hosted fonts
