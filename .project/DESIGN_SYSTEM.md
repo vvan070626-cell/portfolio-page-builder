@@ -11,8 +11,8 @@ Digital paper: an almost-white canvas, dense black typography, monospaced suppor
 - Borders: light graphite grey
 
 ## Typography
-- Headings and body: compact system sans-serif stack with strong weight contrast
-- Supporting labels: system monospace stack
+- Headings and body: self-hosted Montserrat variable family with strong weight contrast
+- Supporting labels: self-hosted DM Mono
 
 ## Layout
 - Fixed, low-profile navigation

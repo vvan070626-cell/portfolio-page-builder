@@ -94,8 +94,8 @@ textarea {
 }
 
 :root {
-  --font-sans: Arial, Helvetica, "Nimbus Sans L", sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  --font-sans: "Montserrat Variable", Arial, Helvetica, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --background: oklch(0.992 0.002 95);
   --foreground: oklch(0.18 0.004 80);
   --card: oklch(0.992 0.002 95);
