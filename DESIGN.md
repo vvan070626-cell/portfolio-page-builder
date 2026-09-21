@@ -1,6 +1,6 @@
 ---
 name: "Personal Portfolio"
-description: "A placeholder-ready personal portfolio inspired by a digital-paper interface, with a clear introduction, practice overview, and contact path."
+description: "A placeholder-ready personal portfolio inspired by a digital-paper interface, with editorial spacing, restrained motion, and a clear contact path."
 colors:
   background: "oklch(0.992 0.002 95)"
   foreground: "oklch(0.18 0.004 80)"
@@ -28,7 +28,7 @@ colors:
   sidebar-primary: "oklch(0.74 0.18 64)"
 typography:
   mono:
-    fontFamily: "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"Liberation Mono\", monospace"
+    fontFamily: "\"DM Mono\", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
 rounded:
   sm: "calc(var(--radius) * 0.6)"
   md: "calc(var(--radius) * 0.8)"
@@ -57,10 +57,10 @@ Declared in `globals.css` as `--color-*` and mirrored in the frontmatter. Use th
 
 ## Typography
 
-- Headings and body: compact system sans-serif stack with strong weight contrast
-- Supporting labels: system monospace stack
+- Headings and body: self-hosted Montserrat variable family with strong weight contrast
+- Supporting labels: self-hosted DM Mono
 
-- Mono: `ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace`
+- Mono: `"DM Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`
 
 ## Shapes
 

@@ -6,7 +6,7 @@
 
 ## What this is
 
-A placeholder-ready personal portfolio inspired by a digital-paper interface, with a clear introduction, practice overview, and contact path.
+A placeholder-ready personal portfolio inspired by a digital-paper interface, with editorial spacing, restrained motion, and a clear contact path.
 
 ## What it enables
 
@@ -18,7 +18,7 @@ Prospective clients, collaborators, and people evaluating the owner's work and c
 
 ## What exists today
 
-Responsive fixed navigation with a mobile menu - Introductory hero with an original replaceable line-art visual - Three placeholder practice descriptions - Prominent email contact action and footer navigation - Black-and-white digital-paper visual language with a single orange accent
+Responsive fixed navigation with a mobile menu - Introductory hero with an original replaceable line-art visual - Three placeholder practice descriptions - Prominent email contact action and footer navigation - Black-and-white digital-paper visual language with a single orange accent - Scroll-triggered section entrances, header scroll feedback, hover states, and subtle pointer-responsive artwork - Reduced-motion support for all non-essential movement
 
 ## Brand commitments & durable constraints
 
@@ -35,7 +35,7 @@ Keep all third-party reference content replaced with generic placeholders - Pres
 
 ## Positioning
 
-A placeholder-ready personal portfolio inspired by a digital-paper interface, with a clear introduction, practice overview, and contact path.
+A placeholder-ready personal portfolio inspired by a digital-paper interface, with editorial spacing, restrained motion, and a clear contact path.
 
 ## Operating Context
 
@@ -43,7 +43,7 @@ Responsive web, built unattended in one pass. Task mode: Experience.
 
 ## Evidence on Hand
 
-Responsive fixed navigation with a mobile menu - Introductory hero with an original replaceable line-art visual - Three placeholder practice descriptions - Prominent email contact action and footer navigation - Black-and-white digital-paper visual language with a single orange accent
+Responsive fixed navigation with a mobile menu - Introductory hero with an original replaceable line-art visual - Three placeholder practice descriptions - Prominent email contact action and footer navigation - Black-and-white digital-paper visual language with a single orange accent - Scroll-triggered section entrances, header scroll feedback, hover states, and subtle pointer-responsive artwork - Reduced-motion support for all non-essential movement
 
 ## Product Principles
 
