@@ -1,100 +1,49 @@
-# PersonalSite Specification
+# Personal Portfolio Specification
 
 ## Overview
-- Target: personal portfolio page component
+- Target: three-route personal portfolio
 - Screenshots: home-detail.png, solutions-detail.png, contact-detail.png, desktop.png, and mobile.png
-- Interaction model: native scrolling with fixed navigation, three scroll-driven content states, sticky illustration crossfades, hover feedback, and subtle pointer response
+- Interaction model: click-led route progression with one long solutions page
 
-## DOM Structure
-- Main page
-  - Fixed header
-  - Two-column story wrapper
-    - Left content column
-      - Profile section
-      - Solutions section
-      - Contact section
-    - Desktop sticky illustration stage
-  - Fixed desktop section counter
-  - Footer
+## Route Structure
+- `/`: profile and practice introduction
+- `/solutions`: full vertically scrolling services narrative
+- `/contact`: concise contact destination
 
-## Typography Targets
-- Brand and desktop navigation: Lato, 20px, normal; active item bold
-- Primary first line: Montserrat, 80px, weight 900, line-height 96px
-- Primary second line: Montserrat, 64px, weight 600, line-height 76.8px
-- Section headings: Montserrat, 45.333px, weight 700, line-height approximately 54.4px
-- Supporting monospaced line: 18–21.333px, relaxed 32px line-height
-- Large body/contact values: Lato, 24px, line-height 28.8–36px
+## Shared Typography Targets
+- Brand and desktop navigation: Lato, 20px
+- Profile display: Montserrat, up to 80px, heavy first line with smaller following lines
+- Route headings: Montserrat, approximately 64–73px on desktop
+- Supporting monospaced line: approximately 18–21px with relaxed line height
+- Large body and contact values: Lato, approximately 20–24px
 
-## Layout Targets
-### Header
-- Position: fixed
-- Height: 56px
-- Maximum width: 1440px
-- Background: near-white paper tone
+## Shared Layout Targets
+- Header height: 56px
+- Content width: approximately 1140px
+- Hero columns: flexible copy plus a 500px illustration frame
+- Hero illustration: upper-right, identical size and alignment on all routes
+- Mobile: single column with illustration beneath the title
 
-### Story Grid
-- Maximum width: approximately 1310px
-- Desktop columns: flexible content column plus 430–560px illustration column
-- Mobile: single column
-
+## Route Behaviors
 ### Profile
-- Minimum desktop height: viewport minus header
-- Display title aligned to the left
-- Illustration visually occupies approximately 460–560px width
+- Uses the working illustration
+- Ends with a large orange broken-outline link to Solutions
 
 ### Solutions
-- Six service groups in three columns on wide screens
-- Service titles use bold display type; list items use large body type
-- Orange punctuation provides the only strong color signal
+- Uses the approval illustration
+- Scrolls normally through all content blocks
+- Ends with a large orange broken-outline link to Contact
 
 ### Contact
-- Three contact columns
-- Large orange outlined pill action
-- Phone illustration active in the sticky stage
+- Uses the phone illustration
+- Shows three contact methods below the hero
+- Remains close to viewport height on desktop
 
-## States and Behaviors
-### Active section
-- Trigger: IntersectionObserver using the middle viewport band
-- Values: profile, practice, contact
-- Effects: navigation weight, section counter opacity, and illustration state update together
+## Motion
+- Route entrance: opacity 0 to 1 with a short upward settle
+- Link hover: subtle lift and orange fill
+- Reduced motion: no page transform and no hover lift
 
-### Illustration transition
-- Before: opacity 0, translateY 20px, scale 0.965, blur 1px
-- After: opacity 1, translateY 0, scale 1, blur 0
-- Transition: 700ms decelerating
-
-### Pointer response
-- Trigger: fine-pointer movement over the illustration stage
-- Movement: maximum 6px from center in either axis
-- Reset: returns to center on pointer leave
-
-### Header scroll state
-- Trigger: window scroll greater than 24px
-- Before: transparent border
-- After: visible light border and small shadow
-- Transition: 300ms decelerating
-
-### Section reveal
-- Trigger: approximately 14% intersection
-- Before: opacity 0 and translateY 24px
-- After: opacity 1 and translateY 0
-- Transition: 700ms decelerating
-
-### Reduced motion
-- Disables smooth scrolling, pointer translation, reveal transforms, and crossfade transforms
-
-## Assets
-- Original generic working illustration: illustration-working.webp
-- Original generic approval illustration: illustration-approval.webp
-- Original generic contact illustration: illustration-contact.webp
-- Lucide icons for menu and directional arrows
-
-## Text Content
-- All identity, offer, service, contact, and profile information remains generic placeholder copy.
-- No source-site identity or service copy is reproduced.
-
-## Responsive Behavior
-- Desktop: sticky right illustration stage and scroll-driven crossfades
-- Tablet: two columns with reduced gaps and illustration width
-- Mobile: each illustration appears inline after its section introduction; service groups stack or form two columns where space allows
-- Primary layout switch: 768px
+## Content
+- Identity, services, selected work, and contact information remain generic placeholders.
+- No source-site identity, wording, or portfolio material is reproduced.

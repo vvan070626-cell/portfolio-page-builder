@@ -1,20 +1,26 @@
 # Behaviors
 
-## Interaction Model
-- Primary model: a three-state editorial page with fixed navigation and a sticky illustration stage on desktop.
-- Scroll: native vertical scrolling; no scroll snap, parallax library, or custom smooth-scroll engine.
-- Navigation: desktop links remain visible; mobile navigation collapses into a sheet.
-- Illustration states: profile, solutions, and contact each activate a corresponding original female line illustration.
-- Hover: links reduce emphasis through opacity; service rows shift slightly; the contact control fills orange.
-- Entrance: short opacity and vertical-position transitions, without bounce or elastic motion.
+## Route Model
+- The portfolio uses three real routes: profile, solutions, and contact.
+- The profile page advances to solutions through the large orange outlined control.
+- The solutions page is the only long scrolling page and advances to contact from its final orange control.
+- Navigation links can move directly between the three routes.
 
-## Scroll Coordination
-- An IntersectionObserver tracks which of the three content sections occupies the central viewport band.
-- The active illustration crossfades, moves upward, and scales from 0.965 to 1 over 700ms.
-- The active navigation label gains weight and the left-side section counter increases opacity.
-- Mobile layouts place each illustration directly after its section introduction instead of using sticky positioning.
+## Shared Hero
+- Every route uses the same two-column hero grid.
+- The heading begins on the same left baseline on all three pages.
+- Each character illustration occupies the same 500px upper-right frame on desktop.
+- On mobile, the illustration moves beneath the heading without changing the route sequence.
 
-## Pointer Response
-- On fine-pointer devices, the sticky illustration stage follows the pointer by no more than 6px from center.
-- The response returns to center on pointer leave.
-- Pointer drift, scroll transforms, and smooth scrolling are disabled for reduced-motion preferences.
+## Page Entrance
+- Route content fades in and settles upward over 520ms.
+- Reduced-motion preferences remove the transform and animation.
+
+## Primary Action
+- The orange pill uses a broken outline to echo the reference control.
+- Hover lifts and fills the action while retaining the broken border treatment.
+- Keyboard focus uses a clear offset ring.
+
+## Solutions Scroll
+- Services, features, questions, selected-work placeholders, principles, and the contact action remain in normal document flow.
+- There is no sticky illustration stage and no scroll-controlled illustration swap.

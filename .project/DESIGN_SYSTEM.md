@@ -17,15 +17,16 @@ Digital paper: an almost-white canvas, dense black typography, sparse black-line
 
 ## Layout
 - Fixed 56px navigation
-- Three full-height editorial story states
-- Flexible content column paired with a 430–560px sticky illustration stage
-- Mobile layouts place each illustration directly after its section introduction
+- Three distinct routes for profile, solutions, and contact
+- Shared hero grid with a consistent 500px illustration frame in the upper-right
+- Profile and contact stay concise; solutions carries the long vertical narrative
+- Mobile layouts stack the illustration beneath the title while preserving its scale
 - Wide service grids and generous vertical spacing
 
 ## Interaction
-- Active section controls navigation weight, section counter, and illustration state
-- Illustrations crossfade, rise, and scale into place over 700ms
-- Header gains a light divider after scrolling
-- Active artwork may drift by a few pixels with fine-pointer movement
-- Links and service lists use small opacity or horizontal-shift feedback
-- Smooth anchor navigation and all optional movement are disabled under reduced-motion preferences
+- Large broken-outline orange links advance profile → solutions → contact
+- Route changes use a restrained fade and vertical settle
+- Solutions scrolls naturally through its content sections
+- Navigation weight identifies the current page
+- Links use small opacity, color, or lift feedback
+- Optional movement is disabled under reduced-motion preferences

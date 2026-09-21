@@ -1,27 +1,36 @@
 # Page Topology
 
-1. Fixed header
-   - Brand placeholder at left
-   - Solutions and Contact anchors at right
-   - Active-section weight change
-   - Mobile menu and jump control below the desktop breakpoint
-2. Two-column scroll story
-   - Left column contains three full-height content sections
-   - Right column contains a sticky illustration stage on desktop
-3. Profile state
-   - Two-line 80px / 64px display title on desktop
-   - Monospaced positioning statement
-   - Working-at-laptop illustration
-4. Solutions state
-   - 45.333px section heading with orange punctuation
-   - Six generic service groups
-   - Thumbs-up illustration
-5. Contact state
-   - 45.333px section heading and 24px supporting line
-   - Email, phone, and profile placeholders
-   - Orange outlined contact control
-   - Phone-and-laptop illustration
-6. Footer
-   - Identity placeholder and repeated short navigation
+## Shared
+1. Fixed 56px header
+   - Identity at left
+   - Solutions, Contact, and search glyph at right
+   - Current page shown with heavier weight
+   - Sheet navigation below the desktop breakpoint
+2. Shared hero grid
+   - Large display heading and monospaced supporting line at left
+   - One route-specific character illustration in a fixed upper-right frame
+3. Compact footer
+   - Dot marker
+   - Solutions and Contact links
 
-The page uses one normal document scroll container. The header and desktop illustration stage are sticky/fixed; all content sections remain in document flow.
+## Profile Route
+1. Three-line display title
+2. Working-at-laptop illustration
+3. Three practice-area columns
+4. Large orange broken-outline link to Solutions
+
+## Solutions Route
+1. Solutions heading and approval illustration
+2. Six service groups
+3. Segmented divider
+4. Features introduction and four feature blocks
+5. Segmented divider
+6. Three-row FAQ accordion
+7. Muted selected-work band with three generic placeholders
+8. Four-column core principles section
+9. Large orange broken-outline link to Contact
+
+## Contact Route
+1. Contact heading and phone illustration
+2. Three contact columns for email, telephone, and professional profile
+3. Footer held near the lower edge on tall screens
