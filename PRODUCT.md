@@ -6,7 +6,7 @@
 
 ## What this is
 
-A placeholder-ready personal portfolio inspired by a digital-paper interface, with three scroll-linked illustration states and a clear contact path.
+A placeholder-ready three-page personal portfolio with digital-paper styling, consistent character illustrations, and click-led navigation from profile to services to contact.
 
 ## What it enables
 
@@ -18,7 +18,7 @@ Prospective clients, collaborators, and people evaluating the owner's work and c
 
 ## What exists today
 
-Responsive fixed navigation with active-section feedback and a mobile menu - Three full-height story states for profile, solutions, and contact - Three original black-line illustrations featuring a medium-short-haired woman - Sticky desktop illustration transitions synchronized to scrolling - Six generic solution groups and placeholder contact information - Black-and-white digital-paper visual language with a single orange accent - Reduced-motion support for all non-essential movement
+Three real pages for profile, solutions, and contact - Fixed navigation with active-page feedback and a mobile menu - Click-led orange transition controls from profile to solutions and solutions to contact - One long solutions page with services, features, FAQ, work placeholders, and principles - Three original black-line illustrations featuring a medium-short-haired woman - Identical illustration sizing and upper-right placement across all three pages - Black-and-white digital-paper visual language with a single orange accent - Reduced-motion support for page entrances and hover movement
 
 ## Brand commitments & durable constraints
 
@@ -35,7 +35,7 @@ Keep all third-party reference content replaced with generic placeholders - Use 
 
 ## Positioning
 
-A placeholder-ready personal portfolio inspired by a digital-paper interface, with three scroll-linked illustration states and a clear contact path.
+A placeholder-ready three-page personal portfolio with digital-paper styling, consistent character illustrations, and click-led navigation from profile to services to contact.
 
 ## Operating Context
 
@@ -43,7 +43,7 @@ Responsive web, built unattended in one pass. Task mode: Experience.
 
 ## Evidence on Hand
 
-Responsive fixed navigation with active-section feedback and a mobile menu - Three full-height story states for profile, solutions, and contact - Three original black-line illustrations featuring a medium-short-haired woman - Sticky desktop illustration transitions synchronized to scrolling - Six generic solution groups and placeholder contact information - Black-and-white digital-paper visual language with a single orange accent - Reduced-motion support for all non-essential movement
+Three real pages for profile, solutions, and contact - Fixed navigation with active-page feedback and a mobile menu - Click-led orange transition controls from profile to solutions and solutions to contact - One long solutions page with services, features, FAQ, work placeholders, and principles - Three original black-line illustrations featuring a medium-short-haired woman - Identical illustration sizing and upper-right placement across all three pages - Black-and-white digital-paper visual language with a single orange accent - Reduced-motion support for page entrances and hover movement
 
 ## Product Principles
 

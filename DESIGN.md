@@ -1,6 +1,6 @@
 ---
 name: "Personal Portfolio"
-description: "A placeholder-ready personal portfolio inspired by a digital-paper interface, with three scroll-linked illustration states and a clear contact path."
+description: "A placeholder-ready three-page personal portfolio with digital-paper styling, consistent character illustrations, and click-led navigation from profile to services to contact."
 colors:
   background: "oklch(0.992 0.002 95)"
   foreground: "oklch(0.18 0.004 80)"
