@@ -21,6 +21,9 @@ Digital paper: an almost-white canvas, dense black typography, monospaced suppor
 - Generous vertical spacing and minimal container decoration
 
 ## Interaction
-- Short opacity and scale feedback
-- Smooth anchor navigation with reduced-motion support
+- Short opacity and position feedback on links and controls
+- One-time section entrances driven by viewport visibility
+- Header gains a light divider after scrolling
+- Hero artwork may drift by a few pixels with fine-pointer movement
+- Smooth anchor navigation and all optional movement disabled under reduced-motion preferences
 - Mobile navigation uses the shared sheet pattern
