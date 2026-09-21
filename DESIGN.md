@@ -1,12 +1,38 @@
 ---
-name: "workspace"
+name: "Personal Portfolio"
+description: "A placeholder-ready personal portfolio inspired by a digital-paper interface, with a clear introduction, practice overview, and contact path."
+colors:
+  background: "oklch(0.992 0.002 95)"
+  foreground: "oklch(0.18 0.004 80)"
+  card: "oklch(0.992 0.002 95)"
+  card-foreground: "oklch(0.18 0.004 80)"
+  popover: "oklch(0.992 0.002 95)"
+  popover-foreground: "oklch(0.18 0.004 80)"
+  primary: "oklch(0.74 0.18 64)"
+  primary-foreground: "oklch(0.18 0.004 80)"
+  secondary: "oklch(0.955 0.004 95)"
+  secondary-foreground: "oklch(0.18 0.004 80)"
+  muted: "oklch(0.955 0.004 95)"
+  muted-foreground: "oklch(0.48 0.01 80)"
+  accent: "oklch(0.94 0.035 70)"
+  accent-foreground: "oklch(0.18 0.004 80)"
+  destructive: "oklch(0.58 0.21 28)"
+  border: "oklch(0.86 0.006 95)"
+  input: "oklch(0.86 0.006 95)"
+  ring: "oklch(0.74 0.18 64)"
+  sidebar-ring: "oklch(0.74 0.18 64)"
+  sidebar-border: "oklch(0.86 0.006 95)"
+  sidebar-accent-foreground: "oklch(0.18 0.004 80)"
+  sidebar-accent: "oklch(0.94 0.035 70)"
+  sidebar-primary-foreground: "oklch(0.18 0.004 80)"
+  sidebar-primary: "oklch(0.74 0.18 64)"
 typography:
   mono:
     fontFamily: "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"Liberation Mono\", monospace"
 rounded:
   sm: "calc(var(--radius) * 0.6)"
   md: "calc(var(--radius) * 0.8)"
-  lg: "0.625rem"
+  lg: "0.75rem"
   xl: "calc(var(--radius) * 1.4)"
   2xl: "calc(var(--radius) * 1.8)"
   3xl: "calc(var(--radius) * 2.2)"
@@ -17,31 +43,32 @@ rounded:
 
 ## Overview
 
-**No visual direction has been committed for workspace yet.** The project is still on the starter's placeholder palette — shadcn's default neutral, every colour zero-chroma — so it is deliberately NOT listed above as a token set to respect. Treat this project as greenfield: decide the world, then write the palette into `globals.css`, and this file will state it from the next turn onward.
+Digital paper: an almost-white canvas, dense black typography, monospaced supporting text, open spacing, and one orange action signal.
 
 ## Colors
 
-| Token | Value |
+- Background: near-white paper
+- Foreground: soft near-black
+- Muted surfaces: pale neutral grey
+- Primary accent: clear orange
+- Borders: light graphite grey
+
+Declared in `globals.css` as `--color-*` and mirrored in the frontmatter. Use the token, never a raw hex.
 
 ## Typography
 
-- Headings:
-- Body:
+- Headings and body: compact system sans-serif stack with strong weight contrast
+- Supporting labels: system monospace stack
 
 - Mono: `ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace`
 
-## Layout
-
-- Radius / shadow / spacing rhythm:
-- Shared components:
-
 ## Shapes
 
-Radii: `sm` calc(var(--radius) * 0.6), `md` calc(var(--radius) * 0.8), `lg` 0.625rem, `xl` calc(var(--radius) * 1.4), `2xl` calc(var(--radius) * 1.8), `3xl` calc(var(--radius) * 2.2), `4xl` calc(var(--radius) * 2.6)
+Radii: `sm` calc(var(--radius) * 0.6), `md` calc(var(--radius) * 0.8), `lg` 0.75rem, `xl` calc(var(--radius) * 1.4), `2xl` calc(var(--radius) * 1.8), `3xl` calc(var(--radius) * 2.2), `4xl` calc(var(--radius) * 2.6)
 
 ## Do's and Don'ts
 
 - Do load faces through Fontsource, not `next/font/google`.
-- Do write the direction's palette into `globals.css` as the token block; keep the token NAMES, replace the values.
+- Don't introduce a colour or radius that isn't a token above.
 - Don't use gradient text, or a purple/violet gradient as the brand signal.
 - Don't use bounce or elastic easing; real objects decelerate smoothly.

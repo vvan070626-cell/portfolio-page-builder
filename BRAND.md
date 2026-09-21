@@ -1,6 +1,25 @@
 ---
-name: "workspace"
-slug: "workspace"
+name: "Personal Portfolio"
+slug: "personal-portfolio"
+one_liner: "A placeholder-ready personal portfolio inspired by a digital-paper interface, with a clear introduction, practice overview, and contact path."
+audience: "Prospective clients, collaborators, and people evaluating the owner's work and capabilities."
+value_props:
+  - "Responsive fixed navigation with a mobile menu"
+  - "Introductory hero with an original replaceable line-art visual"
+  - "Three placeholder practice descriptions"
+  - "Prominent email contact action and footer navigation"
+  - "Black-and-white digital-paper visual language with a single orange accent"
+ctas:
+  - "A short positioning line ..."
+palette:
+  - "oklch(0.992 0.002 95)"
+  - "oklch(0.18 0.004 80)"
+  - "oklch(0.74 0.18 64)"
+  - "oklch(0.955 0.004 95)"
+  - "oklch(0.48 0.01 80)"
+  - "oklch(0.94 0.035 70)"
+  - "oklch(0.58 0.21 28)"
+  - "oklch(0.86 0.006 95)"
 typography:
   mono: "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"Liberation Mono\", monospace"
 ---
@@ -9,7 +28,7 @@ typography:
 
 ## What this is
 
-The brand facts workspace itself settled: what it is called, what it says it does, who the brain says it is for, the tokens the shipped code was checked against, and the call-to-action text on its own landing page. The values above are normative and readable without a model.
+The brand facts Personal Portfolio itself settled: what it is called, what it says it does, who the brain says it is for, the tokens the shipped code was checked against, and the call-to-action text on its own landing page. The values above are normative and readable without a model.
 
 `proposed:` is the exception — it is read off the committed visual direction and offered as a starting point, not recorded as a decision.
 
