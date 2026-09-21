@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "@fontsource-variable/montserrat";
-import "@fontsource/dm-mono/400.css";
-import "@fontsource/dm-mono/500.css";
+import "@fontsource/lato/300.css";
+import "@fontsource/lato/400.css";
+import "@fontsource/lato/700.css";
+import "@fontsource/lato/900.css";
 import "./globals.css";
 
 export const metadata: Metadata = {

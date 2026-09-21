@@ -47,7 +47,7 @@ textarea {
 }
 
 @theme inline {
-  --font-heading: var(--font-sans);
+  --font-heading: "Montserrat Variable", Arial, Helvetica, sans-serif;
   --font-sans: var(--font-sans);
   --ease-out: var(--ease-out);
   --ease-in-out: var(--ease-in-out);
@@ -94,8 +94,8 @@ textarea {
 }
 
 :root {
-  --font-sans: "Montserrat Variable", Arial, Helvetica, sans-serif;
-  --font-mono: "DM Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-sans: "Lato", Arial, Helvetica, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
   --background: oklch(0.992 0.002 95);
   --foreground: oklch(0.18 0.004 80);
   --card: oklch(0.992 0.002 95);

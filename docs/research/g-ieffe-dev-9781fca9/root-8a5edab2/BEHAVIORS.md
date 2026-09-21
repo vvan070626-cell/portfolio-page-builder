@@ -1,19 +1,20 @@
 # Behaviors
 
 ## Interaction Model
-- Primary model: static editorial page with fixed navigation and lightweight transitions.
-- Scroll: native vertical scrolling; no scroll snap, parallax, or smooth-scroll library.
-- Navigation: desktop links remain visible; mobile navigation collapses into a menu.
-- Hover: links reduce emphasis through opacity; primary action uses restrained scale and color response.
+- Primary model: a three-state editorial page with fixed navigation and a sticky illustration stage on desktop.
+- Scroll: native vertical scrolling; no scroll snap, parallax library, or custom smooth-scroll engine.
+- Navigation: desktop links remain visible; mobile navigation collapses into a sheet.
+- Illustration states: profile, solutions, and contact each activate a corresponding original female line illustration.
+- Hover: links reduce emphasis through opacity; service rows shift slightly; the contact control fills orange.
 - Entrance: short opacity and vertical-position transitions, without bounce or elastic motion.
 
-## Measured Motion
-- Most reference controls use transitions in the 180–375ms range.
-- Navigation remains fixed at the top while content scrolls beneath it.
-- Mobile menu content fades and slides with a short decelerating transition.
+## Scroll Coordination
+- An IntersectionObserver tracks which of the three content sections occupies the central viewport band.
+- The active illustration crossfades, moves upward, and scales from 0.965 to 1 over 700ms.
+- The active navigation label gains weight and the left-side section counter increases opacity.
+- Mobile layouts place each illustration directly after its section introduction instead of using sticky positioning.
 
-## Implementation
-- Preserve native scrolling and fixed navigation.
-- Use IntersectionObserver for one-time section reveal.
-- Use pointer position only for a subtle hero artwork drift on fine-pointer devices.
-- Respect reduced-motion preferences by disabling transforms and smooth scrolling.
+## Pointer Response
+- On fine-pointer devices, the sticky illustration stage follows the pointer by no more than 6px from center.
+- The response returns to center on pointer leave.
+- Pointer drift, scroll transforms, and smooth scrolling are disabled for reduced-motion preferences.

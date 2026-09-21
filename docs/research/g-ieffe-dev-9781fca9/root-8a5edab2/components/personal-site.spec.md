@@ -2,81 +2,99 @@
 
 ## Overview
 - Target: personal portfolio page component
-- Screenshots: desktop.png and mobile.png in the page design-reference folder
-- Interaction model: native scroll with fixed navigation, hover feedback, one-time reveal, and subtle pointer-responsive hero art
+- Screenshots: home-detail.png, solutions-detail.png, contact-detail.png, desktop.png, and mobile.png
+- Interaction model: native scrolling with fixed navigation, three scroll-driven content states, sticky illustration crossfades, hover feedback, and subtle pointer response
 
 ## DOM Structure
 - Main page
   - Fixed header
-  - Hero section
-  - Practice section with three articles
-  - Contact section
+  - Two-column story wrapper
+    - Left content column
+      - Profile section
+      - Solutions section
+      - Contact section
+    - Desktop sticky illustration stage
+  - Fixed desktop section counter
   - Footer
 
-## Computed Style Targets
-### Page
-- Background: near-white paper tone
-- Foreground: near-black
-- Maximum content width: approximately 1240px
-- Header maximum width: approximately 1440px
+## Typography Targets
+- Brand and desktop navigation: Lato, 20px, normal; active item bold
+- Primary first line: Montserrat, 80px, weight 900, line-height 96px
+- Primary second line: Montserrat, 64px, weight 600, line-height 76.8px
+- Section headings: Montserrat, 45.333px, weight 700, line-height approximately 54.4px
+- Supporting monospaced line: 18–21.333px, relaxed 32px line-height
+- Large body/contact values: Lato, 24px, line-height 28.8–36px
 
+## Layout Targets
 ### Header
 - Position: fixed
-- Desktop height: approximately 64px
-- Desktop navigation text: approximately 20px in the reference; slightly reduced locally to preserve spacing
-- Transition: 180–240ms opacity and background changes
+- Height: 56px
+- Maximum width: 1440px
+- Background: near-white paper tone
 
-### Hero
-- Desktop layout: two columns with the title occupying slightly less than half the width
-- Mobile layout: single column
-- Title: very heavy sans-serif with tight negative tracking and compact line-height
-- Supporting line: monospaced, widely spaced, restrained size
-- Illustration: black-and-white original asset on transparent-looking white ground
+### Story Grid
+- Maximum width: approximately 1310px
+- Desktop columns: flexible content column plus 430–560px illustration column
+- Mobile: single column
 
-### Practice
-- Desktop: three equal columns
-- Mobile: single column with large vertical gaps
-- Headings: bold compact sans-serif
-- Descriptions: relaxed line-height with selected bold phrases avoided because copy remains generic
+### Profile
+- Minimum desktop height: viewport minus header
+- Display title aligned to the left
+- Illustration visually occupies approximately 460–560px width
+
+### Solutions
+- Six service groups in three columns on wide screens
+- Service titles use bold display type; list items use large body type
+- Orange punctuation provides the only strong color signal
 
 ### Contact
-- Large rounded outline using the orange primary token
-- Hover: scale to approximately 1.02 and increase line emphasis
-- Active: translate by approximately 1px
+- Three contact columns
+- Large orange outlined pill action
+- Phone illustration active in the sticky stage
 
 ## States and Behaviors
+### Active section
+- Trigger: IntersectionObserver using the middle viewport band
+- Values: profile, practice, contact
+- Effects: navigation weight, section counter opacity, and illustration state update together
+
+### Illustration transition
+- Before: opacity 0, translateY 20px, scale 0.965, blur 1px
+- After: opacity 1, translateY 0, scale 1, blur 0
+- Transition: 700ms decelerating
+
+### Pointer response
+- Trigger: fine-pointer movement over the illustration stage
+- Movement: maximum 6px from center in either axis
+- Reset: returns to center on pointer leave
+
 ### Header scroll state
-- Trigger: window scroll above 24px
-- Before: transparent border and nearly opaque background
-- After: visible light border and subtle shadow
-- Transition: 240ms decelerating
+- Trigger: window scroll greater than 24px
+- Before: transparent border
+- After: visible light border and small shadow
+- Transition: 300ms decelerating
 
 ### Section reveal
-- Trigger: IntersectionObserver at approximately 16% visibility
+- Trigger: approximately 14% intersection
 - Before: opacity 0 and translateY 24px
 - After: opacity 1 and translateY 0
-- Transition: 650–800ms decelerating; disabled for reduced motion
+- Transition: 700ms decelerating
 
-### Hero pointer response
-- Trigger: pointer movement over hero artwork on fine-pointer devices
-- State: artwork translates no more than 8px in either axis
-- Transition: frame-synced CSS custom properties; disabled for reduced motion and touch input
-
-### Hover states
-- Navigation links: opacity 1 to approximately 0.45
-- Practice rows: title shifts slightly right while the number shifts slightly left
-- Contact control: scale 1 to 1.02
+### Reduced motion
+- Disables smooth scrolling, pointer translation, reveal transforms, and crossfade transforms
 
 ## Assets
-- Original generic black-and-white working-at-laptop illustration stored locally
-- Lucide icons for menu, search/jump, and directional arrows
+- Original generic working illustration: illustration-working.webp
+- Original generic approval illustration: illustration-approval.webp
+- Original generic contact illustration: illustration-contact.webp
+- Lucide icons for menu and directional arrows
 
 ## Text Content
-- All content is generic placeholder copy written for later replacement.
-- No reference-site identity, service wording, or contact information is reproduced.
+- All identity, offer, service, contact, and profile information remains generic placeholder copy.
+- No source-site identity or service copy is reproduced.
 
 ## Responsive Behavior
-- Desktop: fixed top navigation, two-column hero, three-column practice area
-- Tablet: reduced gaps while retaining two-column hero where space permits
-- Mobile: menu sheet, single-column hero, illustration below title, stacked practice blocks, full-width contact control
+- Desktop: sticky right illustration stage and scroll-driven crossfades
+- Tablet: two columns with reduced gaps and illustration width
+- Mobile: each illustration appears inline after its section introduction; service groups stack or form two columns where space allows
 - Primary layout switch: 768px

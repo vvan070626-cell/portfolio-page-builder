@@ -1,7 +1,7 @@
 # Personal Portfolio Design System
 
 ## Direction
-Digital paper: an almost-white canvas, dense black typography, monospaced supporting text, open spacing, and one orange action signal.
+Digital paper: an almost-white canvas, dense black typography, sparse black-line illustrations, open spacing, and one orange action signal.
 
 ## Palette
 - Background: near-white paper
@@ -11,19 +11,21 @@ Digital paper: an almost-white canvas, dense black typography, monospaced suppor
 - Borders: light graphite grey
 
 ## Typography
-- Headings and body: self-hosted Montserrat variable family with strong weight contrast
-- Supporting labels: self-hosted DM Mono
+- Display headings: self-hosted Montserrat variable family
+- Navigation and body: self-hosted Lato
+- Supporting labels: system monospace stack with reference-matched sizing and spacing
 
 ## Layout
-- Fixed, low-profile navigation
-- Wide editorial hero with asymmetric text and illustration columns
-- Three-column practice section that becomes a single mobile column
-- Generous vertical spacing and minimal container decoration
+- Fixed 56px navigation
+- Three full-height editorial story states
+- Flexible content column paired with a 430–560px sticky illustration stage
+- Mobile layouts place each illustration directly after its section introduction
+- Wide service grids and generous vertical spacing
 
 ## Interaction
-- Short opacity and position feedback on links and controls
-- One-time section entrances driven by viewport visibility
+- Active section controls navigation weight, section counter, and illustration state
+- Illustrations crossfade, rise, and scale into place over 700ms
 - Header gains a light divider after scrolling
-- Hero artwork may drift by a few pixels with fine-pointer movement
-- Smooth anchor navigation and all optional movement disabled under reduced-motion preferences
-- Mobile navigation uses the shared sheet pattern
+- Active artwork may drift by a few pixels with fine-pointer movement
+- Links and service lists use small opacity or horizontal-shift feedback
+- Smooth anchor navigation and all optional movement are disabled under reduced-motion preferences
