@@ -10,6 +10,7 @@ import {
   UsersRound,
 } from "lucide-react";
 
+import { DeckGallery, type DeckSlide } from "@/components/portfolio/deck-gallery";
 import { IllustratedHero } from "@/components/portfolio/illustrated-hero";
 import { PageTransitionLink } from "@/components/portfolio/page-transition-link";
 import { SiteFooter } from "@/components/portfolio/site-footer";
@@ -30,6 +31,90 @@ const workingMethods = [
   { title: "Languages", items: ["Mandarin", "English", "Familiar with Cantonese"] },
 ];
 
+const reitSlides: DeckSlide[] = [
+  {
+    label: "Building operations · overview",
+    title: "Two models for lower cost and earlier intervention",
+    body: "My section connected daily building operations to measurable financial outcomes rather than treating AI as a separate technology layer.",
+    bullets: ["HVAC energy optimization", "Predictive maintenance", "Operational savings translated into REIT value"],
+  },
+  {
+    label: "Model 1 · energy optimization",
+    title: "PPO adjusts HVAC decisions from live operating inputs",
+    body: "The model uses outdoor temperature, electricity pricing, occupancy, and floor area to choose a practical cooling action.",
+    bullets: ["Deep reinforcement learning", "Proximal policy optimization", "Example action: increase cooling set-point by 0.5°C"],
+  },
+  {
+    label: "Model 1 · result",
+    title: "Five-year electricity cost falls in the Yuen Long example",
+    body: "The deck compares the traditional operating method with the PPO-controlled scenario under the same building assumptions.",
+    metrics: [
+      { value: "HK$7.84M", label: "traditional five-year cost" },
+      { value: "HK$6.4288M", label: "PPO five-year cost" },
+      { value: "HK$1.4112M", label: "projected savings" },
+    ],
+  },
+  {
+    label: "Model 2 · predictive maintenance",
+    title: "The regression workflow measures the reconstruction gap",
+    body: "I built this predictive-maintenance model with AI-assisted vibe coding. The website separates the original animated steps so the logic is visible without overlap.",
+    bullets: ["Continuously measure the reconstruction gap", "Compare the error against a three-sigma threshold", "Reject the all-normal assumption when the error is too large"],
+  },
+  {
+    label: "Model 2 · alert",
+    title: "An anomaly becomes a maintenance decision",
+    body: "Once the threshold is crossed, the system issues a warning and supports remaining-useful-life and supply-chain planning.",
+    metrics: [
+      { value: "3σ", label: "anomaly threshold" },
+      { value: "RUL", label: "remaining useful life" },
+      { value: "Alert", label: "maintenance action" },
+    ],
+  },
+];
+
+const goldenLifeSlides: DeckSlide[] = [
+  {
+    label: "Final round · premise",
+    title: "Golden Life addresses the elderly-care funding gap",
+    body: "The final-round proposal connects investment capital, future service access, and community participation in one tokenized framework.",
+    metrics: [
+      { value: "1/3", label: "Hong Kong population aged 65+ by 2035" },
+      { value: "16,500", label: "2024 bed gap cited in the deck" },
+      { value: "8–10 mo", label: "waiting period cited in the deck" },
+    ],
+  },
+  {
+    label: "Pillar I · $BUILD",
+    title: "Fractional capital for physical elderly-care assets",
+    body: "The first pillar opens development funding to smaller investors while tying fund releases to verified construction milestones.",
+    bullets: ["Fractional ownership from HK$5,000", "Construction, operation, and exit phases", "Target fund IRR of approximately 12%"],
+  },
+  {
+    label: "Pillar II · $PEACE",
+    title: "A future-care option locks in access and pricing",
+    body: "Users pay a premium today for a tradable right to future accommodation, with physical settlement through partner care homes.",
+    bullets: ["Redeemable for real accommodation", "Tradable in a secondary market", "5% platform fulfillment fee"],
+  },
+  {
+    label: "Pillar III · $COMMUNITY",
+    title: "Participation becomes a shared growth asset",
+    body: "The third pillar links contribution, anonymized health data, and peer-to-peer activity to the future value of the ecosystem.",
+    bullets: ["70% contribution-mining distribution", "30% initial-liquidity reserve", "Activity and buybacks reinforce the network"],
+  },
+  {
+    label: "Smart allocation · FoF",
+    title: "Golden Life Balancer connects the three pillars",
+    body: "Allocation changes by age and risk profile, while physical assets, future demand, and community intelligence reinforce one another.",
+    bullets: ["Conservative, balanced, and aggressive profiles", "Age-sensitive allocation", "Market intelligence refines pricing"],
+  },
+  {
+    label: "Revenue model",
+    title: "Four revenue streams make the system commercially legible",
+    body: "The business model earns from managed assets, service fulfillment, product issuance, and aggregated data services.",
+    bullets: ["Asset-management fees", "5% fulfillment commission", "Product issuance fees", "Anonymized data services"],
+  },
+];
+
 const projectHighlights = [
   {
     label: "HKSI case competition · preliminary round",
@@ -41,14 +126,11 @@ const projectHighlights = [
     secondMetric: "HK$18.88M",
     secondMetricLabel: "projected additional NOI",
     note: "The CV records adoption by Champion REIT; this view highlights the building-operations section I developed.",
-    previewTitle: "Building operations — my contribution",
-    previewIntro:
-      "I used AI-assisted vibe coding to build the predictive-maintenance regression model. The original slide 21 revealed its visuals in sequence; the web version separates them so the logic stays legible.",
-    previewItems: [
-      { step: "01", title: "Measure", body: "Track the reconstruction gap against the normal operating pattern." },
-      { step: "02", title: "Test", body: "Compare the error with a three-sigma threshold rather than relying on a manual check." },
-      { step: "03", title: "Act", body: "Reject the all-normal assumption, issue a maintenance alert, and support RUL planning." },
-    ],
+    galleryBadge: "Selected PPT pages · my building-operations section",
+    galleryTitle: "AI-REIT building operations",
+    galleryDescription:
+      "Five selected pages preserve the original deck sequence while separating slide 21's overlapping animation states.",
+    slides: reitSlides,
     icon: ChartNoAxesCombined,
   },
   {
@@ -61,14 +143,11 @@ const projectHighlights = [
     secondMetric: "5%",
     secondMetricLabel: "proposed fulfillment commission",
     note: "Designed as a business model, not a technology-only proposal.",
-    previewTitle: "Golden Life — final-round structure",
-    previewIntro:
-      "The final-round deck turns the elderly-care funding gap into three connected products and a smart allocation layer.",
-    previewItems: [
-      { step: "$BUILD", title: "Physical backing", body: "Fractional access to elderly-care development assets." },
-      { step: "$PEACE", title: "Future care", body: "A tradable service option that locks in future access and pricing." },
-      { step: "$COMMUNITY", title: "Shared growth", body: "A contribution-linked asset supporting participation and data value." },
-    ],
+    galleryBadge: "Selected PPT pages · final round",
+    galleryTitle: "Golden Life final-round deck",
+    galleryDescription:
+      "Six selected pages cover the problem, three pillars, smart FoF allocation, and revenue model without loading the entire presentation.",
+    slides: goldenLifeSlides,
     icon: Coins,
   },
 ];
@@ -83,6 +162,7 @@ const supportingProjects = [
     href: "/nftz-seminar-deck.pptx",
     linkLabel: "Download seminar deck",
     download: true,
+    evidence: null,
     placeholder: null,
     icon: Presentation,
   },
@@ -95,6 +175,7 @@ const supportingProjects = [
     href: "https://www.douban.com/group/742302/",
     linkLabel: "Open Douban community archive",
     download: false,
+    evidence: null,
     placeholder: null,
     icon: UsersRound,
   },
@@ -107,7 +188,17 @@ const supportingProjects = [
     href: null,
     linkLabel: null,
     download: false,
-    placeholder: "Evidence slot reserved — budget summary or sponsorship excerpt",
+    evidence: {
+      title: "Selected evidence · itemized vendor quote",
+      note: "Chosen over the event run-sheet and sponsorship draft because it most directly proves budget review and cost control. Vendor identity and private payment details are not published.",
+      metrics: [
+        { value: "¥22,800", label: "final quoted amount" },
+        { value: "16", label: "itemized production lines" },
+        { value: "4", label: "largest costs isolated for review" },
+      ],
+      lines: ["Photography · ¥5,500", "LED screen · ¥3,780", "Audio system · ¥3,500", "Sign-in backdrop · ¥3,000"],
+    },
+    placeholder: null,
     icon: FileChartColumnIncreasing,
   },
 ];
@@ -186,20 +277,12 @@ export function SolutionsPortfolioPage() {
                       </div>
                     </div>
                     <p className="portfolio-case-note">{project.note}</p>
-                    <div className="portfolio-deck-preview">
-                      <p className="portfolio-eyebrow">Deck reconstruction</p>
-                      <h4>{project.previewTitle}</h4>
-                      <p>{project.previewIntro}</p>
-                      <div className="portfolio-deck-sequence">
-                        {project.previewItems.map((item) => (
-                          <div key={item.step}>
-                            <span>{item.step}</span>
-                            <strong>{item.title}</strong>
-                            <p>{item.body}</p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
+                    <DeckGallery
+                      badge={project.galleryBadge}
+                      title={project.galleryTitle}
+                      description={project.galleryDescription}
+                      slides={project.slides}
+                    />
                   </article>
                 );
               })}
@@ -251,6 +334,25 @@ export function SolutionsPortfolioPage() {
                           <ExternalLink size={17} strokeWidth={1.6} aria-hidden="true" />
                         )}
                       </a>
+                    ) : null}
+                    {project.evidence ? (
+                      <div className="portfolio-prom-evidence">
+                        <p className="portfolio-eyebrow">{project.evidence.title}</p>
+                        <div className="portfolio-prom-evidence-metrics">
+                          {project.evidence.metrics.map((metric) => (
+                            <div key={metric.label}>
+                              <strong>{metric.value}</strong>
+                              <span>{metric.label}</span>
+                            </div>
+                          ))}
+                        </div>
+                        <ul>
+                          {project.evidence.lines.map((line) => (
+                            <li key={line}>{line}</li>
+                          ))}
+                        </ul>
+                        <p>{project.evidence.note}</p>
+                      </div>
                     ) : null}
                     {project.placeholder ? (
                       <div className="portfolio-artifact-placeholder portfolio-artifact-placeholder-compact">

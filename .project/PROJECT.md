@@ -18,12 +18,14 @@ Prospective clients, collaborators, and people evaluating the owner's work and c
 - Three real pages for profile, selected work, and contact
 - CV-led positioning around finance, data, communication, and execution
 - Quantified proof points for the HKSI case competition, Douban community, and prom finance role
-- Two featured HKSI competition cases with commercial metrics and web-native reconstructions of the key deck logic
+- Two featured HKSI competition cases with interactive selected-slide presentations rather than full heavy deck embeds
 - A dedicated contribution callout for the AI-REIT building-operations and predictive-maintenance regression model
-- A three-step reconstruction of the preliminary-round slide 21 animation so overlapping visuals remain legible
+- Five selected AI-REIT building-operation slides, including separated states for the preliminary-round slide 21 animation
+- Six selected Golden Life final-round slides covering the problem, three pillars, FoF allocation, and revenue model
 - Supporting project stories for the entrepreneurial finance seminar, Douban eye-care community, and prom finance leadership
 - Original NFTz seminar cover and downloadable presentation file
 - Direct Douban web archive link for the 5,000+ member eye-care community
+- An anonymized Prom vendor-quote snapshot showing the final amount, item count, and largest cost categories without publishing private payment details
 - Education, language, technical skill, and early leadership context
 - Real email and phone details plus a downloadable CV
 - Explicit placeholders for the LinkedIn profile and supporting finance evidence still to be supplied
