@@ -22,6 +22,8 @@ Digital paper: an almost-white canvas, dense black typography, sparse black-line
 - Profile and contact stay concise; selected work carries the long evidence-led narrative
 - Mobile layouts stack the illustration beneath the title while preserving its scale
 - Wide evidence grids, ruled case studies, explicit artifact placeholders, and generous vertical spacing
+- Competition slides are translated into bordered, sequential evidence panels rather than unreadable thumbnail galleries
+- Original deck artwork appears only where it adds proof, with direct download or external-archive actions beneath it
 
 ## Interaction
 - Large broken-outline orange links advance profile → selected work → contact
@@ -33,4 +35,5 @@ Digital paper: an almost-white canvas, dense black typography, sparse black-line
 - Illustration white areas multiply into the paper canvas so their backgrounds remain visually seamless
 - Links use small opacity, color, or lift feedback
 - Missing PPT, community, and professional-profile materials appear as clearly labeled placeholders rather than inactive controls
+- Slide animations that collapse in static files are reconstructed as ordered web steps so the intended reveal remains understandable
 - Optional movement is disabled under reduced-motion preferences

@@ -72,8 +72,8 @@ export function ContactPortfolioPage() {
           <aside className="portfolio-contact-placeholder" aria-label="Future profile links">
             <p className="portfolio-eyebrow">Next material to add</p>
             <p>
-              Add a confirmed LinkedIn profile, the Douban community URL, and selected competition and seminar decks
-              when those links are ready to publish.
+              Add the confirmed LinkedIn profile URL when it is ready to publish. The Douban archive and seminar deck
+              are already available from the selected work page.
             </p>
           </aside>
         </div>

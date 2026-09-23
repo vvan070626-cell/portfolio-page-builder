@@ -1082,6 +1082,70 @@ body {
   font-size: 0.78rem;
 }
 
+.portfolio-deck-preview {
+  margin-top: 2rem;
+  border-top: 1px solid var(--foreground);
+  padding-top: 1.4rem;
+}
+
+.portfolio-deck-preview h4 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 850;
+  letter-spacing: -0.035em;
+}
+
+.portfolio-deck-preview > p:not(.portfolio-eyebrow) {
+  margin-top: 0.75rem;
+  color: var(--muted-foreground);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.portfolio-deck-sequence {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 1.4rem;
+  border: 1px solid var(--foreground);
+}
+
+.portfolio-deck-sequence > div {
+  min-width: 0;
+  padding: 1rem;
+}
+
+.portfolio-deck-sequence > div + div {
+  border-left: 1px solid var(--border);
+}
+
+.portfolio-deck-sequence span,
+.portfolio-deck-sequence strong {
+  display: block;
+}
+
+.portfolio-deck-sequence span {
+  min-height: 1.35rem;
+  color: var(--primary);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.portfolio-deck-sequence strong {
+  margin-top: 1rem;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+}
+
+.portfolio-deck-sequence p {
+  margin: 0.5rem 0 0;
+  color: var(--muted-foreground);
+  font-size: 0.76rem;
+  line-height: 1.48;
+}
+
 .portfolio-work-band {
   border-block: 1px solid var(--border);
 }
@@ -1123,6 +1187,30 @@ body {
   margin-top: 1.4rem !important;
   color: var(--foreground) !important;
   font-weight: 700;
+}
+
+.portfolio-deck-cover {
+  margin-top: 2rem;
+  overflow: hidden;
+  border: 1px solid var(--foreground);
+  background: var(--background);
+}
+
+.portfolio-evidence-link {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 1.4rem;
+  border-bottom: 1px solid currentColor;
+  color: var(--foreground);
+  font-weight: 800;
+  line-height: 1.5;
+  transition: color 180ms var(--ease-out);
+}
+
+.portfolio-evidence-link:hover {
+  color: var(--primary);
 }
 
 .portfolio-artifact-placeholder-compact {
@@ -1272,6 +1360,15 @@ body {
 
   .portfolio-artifact-placeholder {
     min-height: 8rem;
+  }
+
+  .portfolio-deck-sequence {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-deck-sequence > div + div {
+    border-top: 1px solid var(--border);
+    border-left: 0;
   }
 
   .portfolio-faq-section {

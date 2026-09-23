@@ -18,11 +18,15 @@ Prospective clients, collaborators, and people evaluating the owner's work and c
 - Three real pages for profile, selected work, and contact
 - CV-led positioning around finance, data, communication, and execution
 - Quantified proof points for the HKSI case competition, Douban community, and prom finance role
-- Two featured HKSI competition cases with commercial metrics and explicit PPT preview placeholders
+- Two featured HKSI competition cases with commercial metrics and web-native reconstructions of the key deck logic
+- A dedicated contribution callout for the AI-REIT building-operations and predictive-maintenance regression model
+- A three-step reconstruction of the preliminary-round slide 21 animation so overlapping visuals remain legible
 - Supporting project stories for the entrepreneurial finance seminar, Douban eye-care community, and prom finance leadership
+- Original NFTz seminar cover and downloadable presentation file
+- Direct Douban web archive link for the 5,000+ member eye-care community
 - Education, language, technical skill, and early leadership context
 - Real email and phone details plus a downloadable CV
-- Explicit placeholders for future PPT slides, Douban URL, LinkedIn profile, and supporting evidence
+- Explicit placeholders for the LinkedIn profile and supporting finance evidence still to be supplied
 - Fixed navigation with active-page feedback and a mobile menu
 - Clickable black navigation spots on solutions and contact that return directly to the profile
 - A clickable lower-left footer spot that also returns to the profile from solutions and contact

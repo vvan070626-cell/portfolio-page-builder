@@ -1,6 +1,9 @@
+import Image from "next/image";
 import {
   ChartNoAxesCombined,
   Coins,
+  Download,
+  ExternalLink,
   FileChartColumnIncreasing,
   GraduationCap,
   Presentation,
@@ -29,7 +32,7 @@ const workingMethods = [
 
 const projectHighlights = [
   {
-    label: "HKSI case competition · 2025–26",
+    label: "HKSI case competition · preliminary round",
     title: "AI application in REIT asset management",
     description:
       "A data-led acquisition, building-operations, and tenant-management concept using spatial networks, economic and policy signals, population mobility, graph methods, and NLP.",
@@ -37,12 +40,20 @@ const projectHighlights = [
     metricLabel: "projected operating savings",
     secondMetric: "HK$18.88M",
     secondMetricLabel: "projected additional NOI",
-    note: "Semi-finalist submission; the CV records adoption by Champion REIT.",
+    note: "The CV records adoption by Champion REIT; this view highlights the building-operations section I developed.",
+    previewTitle: "Building operations — my contribution",
+    previewIntro:
+      "I used AI-assisted vibe coding to build the predictive-maintenance regression model. The original slide 21 revealed its visuals in sequence; the web version separates them so the logic stays legible.",
+    previewItems: [
+      { step: "01", title: "Measure", body: "Track the reconstruction gap against the normal operating pattern." },
+      { step: "02", title: "Test", body: "Compare the error with a three-sigma threshold rather than relying on a manual check." },
+      { step: "03", title: "Act", body: "Reject the all-normal assumption, issue a maintenance alert, and support RUL planning." },
+    ],
     icon: ChartNoAxesCombined,
   },
   {
-    label: "HKSI case competition · 2026",
-    title: "Tokenized FoF allocation for elderly care",
+    label: "HKSI case competition · final round",
+    title: "Golden Life: a tokenized framework for the aging economy",
     description:
       "A closed-loop concept connecting physical assets, service rights, and community incentives, grounded in real market pricing and allocation data.",
     metric: "4 streams",
@@ -50,6 +61,14 @@ const projectHighlights = [
     secondMetric: "5%",
     secondMetricLabel: "proposed fulfillment commission",
     note: "Designed as a business model, not a technology-only proposal.",
+    previewTitle: "Golden Life — final-round structure",
+    previewIntro:
+      "The final-round deck turns the elderly-care funding gap into three connected products and a smart allocation layer.",
+    previewItems: [
+      { step: "$BUILD", title: "Physical backing", body: "Fractional access to elderly-care development assets." },
+      { step: "$PEACE", title: "Future care", body: "A tradable service option that locks in future access and pricing." },
+      { step: "$COMMUNITY", title: "Shared growth", body: "A contribution-linked asset supporting participation and data value." },
+    ],
     icon: Coins,
   },
 ];
@@ -60,7 +79,11 @@ const supportingProjects = [
     title: "Entrepreneurial Finance Seminar",
     body: "Co-authored an NFTz report and led the team presentation after applying POCD to market, competition, and growth strategy through qualitative and quantitative evaluation.",
     detail: "Delivered by Prof. Shai Bernstein, Harvard Business School",
-    placeholder: "PPT preview reserved — add selected slides or a PDF export",
+    image: "/nftz-seminar-cover.jpg",
+    href: "/nftz-seminar-deck.pptx",
+    linkLabel: "Download seminar deck",
+    download: true,
+    placeholder: null,
     icon: Presentation,
   },
   {
@@ -68,7 +91,11 @@ const supportingProjects = [
     title: "Eye-care community on Douban",
     body: "Identified an underserved eye-health niche, built a community of more than 5,000 members, and published screen-break challenges and science-based guidance.",
     detail: "Presented as an archive of niche discovery and community formation",
-    placeholder: "External community link reserved — add the confirmed Douban URL",
+    image: null,
+    href: "https://www.douban.com/group/742302/",
+    linkLabel: "Open Douban community archive",
+    download: false,
+    placeholder: null,
     icon: UsersRound,
   },
   {
@@ -76,6 +103,10 @@ const supportingProjects = [
     title: "400-person prom finance lead",
     body: "Owned budgeting, payments, procurement, and reconciliation across approximately 200k in spend, then wrote the sponsorship pitch that secured HSBC and ABC in-kind support.",
     detail: "End-to-end responsibility from planning through closeout",
+    image: null,
+    href: null,
+    linkLabel: null,
+    download: false,
     placeholder: "Evidence slot reserved — budget summary or sponsorship excerpt",
     icon: FileChartColumnIncreasing,
   },
@@ -155,9 +186,19 @@ export function SolutionsPortfolioPage() {
                       </div>
                     </div>
                     <p className="portfolio-case-note">{project.note}</p>
-                    <div className="portfolio-artifact-placeholder">
-                      <span>Competition deck preview</span>
-                      <small>Add 3–5 selected slides or a PDF export</small>
+                    <div className="portfolio-deck-preview">
+                      <p className="portfolio-eyebrow">Deck reconstruction</p>
+                      <h4>{project.previewTitle}</h4>
+                      <p>{project.previewIntro}</p>
+                      <div className="portfolio-deck-sequence">
+                        {project.previewItems.map((item) => (
+                          <div key={item.step}>
+                            <span>{item.step}</span>
+                            <strong>{item.title}</strong>
+                            <p>{item.body}</p>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </article>
                 );
@@ -184,9 +225,38 @@ export function SolutionsPortfolioPage() {
                     <h3>{project.title}</h3>
                     <p>{project.body}</p>
                     <p className="portfolio-work-detail">{project.detail}</p>
-                    <div className="portfolio-artifact-placeholder portfolio-artifact-placeholder-compact">
-                      <span>{project.placeholder}</span>
-                    </div>
+                    {project.image ? (
+                      <div className="portfolio-deck-cover">
+                        <Image
+                          src={project.image}
+                          alt="Cover slide from the NFTz seminar presentation"
+                          width={256}
+                          height={144}
+                          className="h-auto w-full"
+                        />
+                      </div>
+                    ) : null}
+                    {project.href && project.linkLabel ? (
+                      <a
+                        href={project.href}
+                        download={project.download || undefined}
+                        target={!project.download ? "_blank" : undefined}
+                        rel={!project.download ? "noreferrer" : undefined}
+                        className="portfolio-evidence-link"
+                      >
+                        {project.linkLabel}
+                        {project.download ? (
+                          <Download size={17} strokeWidth={1.6} aria-hidden="true" />
+                        ) : (
+                          <ExternalLink size={17} strokeWidth={1.6} aria-hidden="true" />
+                        )}
+                      </a>
+                    ) : null}
+                    {project.placeholder ? (
+                      <div className="portfolio-artifact-placeholder portfolio-artifact-placeholder-compact">
+                        <span>{project.placeholder}</span>
+                      </div>
+                    ) : null}
                   </article>
                 );
               })}
@@ -199,11 +269,11 @@ export function SolutionsPortfolioPage() {
             <h2 id="evidence-heading">Reading the evidence</h2>
             <Accordion className="portfolio-accordion">
               <AccordionItem value="competition-materials">
-                <AccordionTrigger>How should the competition PPT be shown?</AccordionTrigger>
+                <AccordionTrigger>How are the competition decks shown?</AccordionTrigger>
                 <AccordionContent>
                   <p>
-                    Use a short, curated sequence: problem, data logic, commercial model, and outcome. The full deck can
-                    remain downloadable later, while the page shows only the slides that prove the thinking quickly.
+                    The page rebuilds the strongest arguments as readable web sequences. This is especially important for
+                    the preliminary-round slide 21, where an animated second image overlaps the first in a static file.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -211,8 +281,8 @@ export function SolutionsPortfolioPage() {
                 <AccordionTrigger>Where does the finance seminar belong?</AccordionTrigger>
                 <AccordionContent>
                   <p>
-                    It sits beside the competition work as proof of structured research and presentation skill. A report
-                    cover plus two strong slides will communicate more than a long event description.
+                    It sits beside the competition work as proof of structured research and presentation skill. Visitors
+                    can see its original cover and download the complete NFTz presentation.
                   </p>
                 </AccordionContent>
               </AccordionItem>
