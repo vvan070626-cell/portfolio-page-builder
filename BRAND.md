@@ -7,9 +7,9 @@ value_props:
   - "Three real pages for profile, selected work, and contact"
   - "CV-led positioning around finance, data, communication, and execution"
   - "Quantified proof points for the HKSI case competition, Douban community, and prom finance role"
-  - "Two featured HKSI competition cases with commercial metrics and explicit PPT preview placeholders"
-  - "Supporting project stories for the entrepreneurial finance seminar, Douban eye-care community, and prom finance leadership"
-  - "Education, language, technical skill, and early leadership context"
+  - "Two featured HKSI competition cases with interactive selected-slide presentations rather than full heavy deck embeds"
+  - "A dedicated contribution callout for the AI-REIT building-operations and predictive-maintenance regression model"
+  - "Five selected AI-REIT building-operation slides, including separated states for the preliminary-round slide 21 animation"
 palette:
   - "oklch(0.992 0.002 95)"
   - "oklch(0.18 0.004 80)"
