@@ -1,6 +1,6 @@
 ---
 name: "Personal Portfolio"
-description: "A three-page portfolio for Wang Hanzhi that presents finance cases, data-informed research, project execution, and contact details through a digital-paper visual system."
+description: "A three-page portfolio for Vivian Wang (Wang Hanzhi) that presents finance cases, data-informed research, project execution, and contact details through a digital-paper visual system."
 colors:
   background: "oklch(0.992 0.002 95)"
   foreground: "oklch(0.18 0.004 80)"

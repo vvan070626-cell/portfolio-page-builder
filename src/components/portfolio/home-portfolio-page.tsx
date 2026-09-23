@@ -35,9 +35,9 @@ export function HomePortfolioPage() {
       <main>
         <div className="portfolio-content-shell">
           <IllustratedHero
-            title="Finance, data, execution"
-            titleLines={["Finance", "data", "execution"]}
-            subtitle="Wang Hanzhi — business and management student at HKUST, building analytical ideas into decisions, presentations, and projects."
+            title="Vivian Wang"
+            titleLines={["Vivian", "Wang"]}
+            subtitle="Vivian Wang (Wang Hanzhi) — business and management student at HKUST, building analytical ideas into decisions, presentations, and projects."
             illustration="/illustration-working.webp"
             illustrationAlt="Black line illustration of Wang Hanzhi working at a laptop"
           />

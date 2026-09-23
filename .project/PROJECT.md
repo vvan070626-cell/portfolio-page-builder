@@ -1,7 +1,7 @@
 <!-- OWNER: Build (with the user) · READERS: every agent · READ THIS FIRST -->
 # Personal Portfolio
 
-**One-liner:** A three-page portfolio for Wang Hanzhi that presents finance cases, data-informed research, project execution, and contact details through a digital-paper visual system.
+**One-liner:** A three-page portfolio for Vivian Wang (Wang Hanzhi) that presents finance cases, data-informed research, project execution, and contact details through a digital-paper visual system.
 
 ## Goal
 Help internship reviewers, competition collaborators, and project partners quickly understand Wang Hanzhi’s analytical range, strongest evidence, and ways to get in touch.
@@ -16,6 +16,7 @@ Prospective clients, collaborators, and people evaluating the owner's work and c
 
 ## What exists today
 - Three real pages for profile, selected work, and contact
+- Homepage identity led by the public-facing name Vivian Wang, with Wang Hanzhi retained for formal context
 - CV-led positioning around finance, data, communication, and execution
 - Quantified proof points for the HKSI case competition, Douban community, and prom finance role
 - Two featured HKSI competition cases with interactive selected-slide presentations rather than full heavy deck embeds
@@ -27,8 +28,8 @@ Prospective clients, collaborators, and people evaluating the owner's work and c
 - Direct Douban web archive link for the 5,000+ member eye-care community
 - An anonymized Prom vendor-quote snapshot showing the final amount, item count, and largest cost categories without publishing private payment details
 - Education, language, technical skill, and early leadership context
-- Real email and phone details plus a downloadable CV
-- Explicit placeholders for the LinkedIn profile and supporting finance evidence still to be supplied
+- Real email, phone, and LinkedIn details plus a downloadable CV
+- An explicit placeholder for supporting finance evidence still to be supplied
 - Fixed navigation with active-page feedback and a mobile menu
 - Clickable black navigation spots on solutions and contact that return directly to the profile
 - A clickable lower-left footer spot that also returns to the profile from solutions and contact

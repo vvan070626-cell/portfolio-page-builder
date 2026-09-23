@@ -1,15 +1,15 @@
 ---
 name: "Personal Portfolio"
 slug: "personal-portfolio"
-one_liner: "A three-page portfolio for Wang Hanzhi that presents finance cases, data-informed research, project execution, and contact details through a digital-paper visual system."
+one_liner: "A three-page portfolio for Vivian Wang (Wang Hanzhi) that presents finance cases, data-informed research, project execution, and contact details through a digital-paper visual system."
 audience: "Prospective clients, collaborators, and people evaluating the owner's work and capabilities."
 value_props:
   - "Three real pages for profile, selected work, and contact"
+  - "Homepage identity led by the public-facing name Vivian Wang, with Wang Hanzhi retained for formal context"
   - "CV-led positioning around finance, data, communication, and execution"
   - "Quantified proof points for the HKSI case competition, Douban community, and prom finance role"
   - "Two featured HKSI competition cases with interactive selected-slide presentations rather than full heavy deck embeds"
   - "A dedicated contribution callout for the AI-REIT building-operations and predictive-maintenance regression model"
-  - "Five selected AI-REIT building-operation slides, including separated states for the preliminary-round slide 21 animation"
 palette:
   - "oklch(0.992 0.002 95)"
   - "oklch(0.18 0.004 80)"

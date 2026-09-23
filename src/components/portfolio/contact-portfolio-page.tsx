@@ -1,4 +1,4 @@
-import { Download, Mail, MapPin, Phone } from "lucide-react";
+import { Download, ExternalLink, Mail, MapPin, Phone } from "lucide-react";
 
 import { IllustratedHero } from "@/components/portfolio/illustrated-hero";
 import { SiteFooter } from "@/components/portfolio/site-footer";
@@ -23,6 +23,12 @@ const contactMethods = [
     href: "/wang-hanzhi-cv.pdf",
     icon: Download,
     download: true,
+  },
+  {
+    label: "LinkedIn",
+    value: "Vivian Wang",
+    href: "https://www.linkedin.com/in/hanzhi-w-b33780439",
+    icon: ExternalLink,
   },
 ];
 
@@ -61,7 +67,12 @@ export function ContactPortfolioPage() {
                     <Icon size={25} strokeWidth={1.65} aria-hidden="true" />
                     <h2>{method.label}</h2>
                   </div>
-                  <a href={method.href} download={method.download || undefined}>
+                  <a
+                    href={method.href}
+                    download={method.download || undefined}
+                    target={method.href.startsWith("https://") ? "_blank" : undefined}
+                    rel={method.href.startsWith("https://") ? "noreferrer" : undefined}
+                  >
                     {method.value}
                   </a>
                 </article>
@@ -69,11 +80,11 @@ export function ContactPortfolioPage() {
             })}
           </section>
 
-          <aside className="portfolio-contact-placeholder" aria-label="Future profile links">
+          <aside className="portfolio-contact-placeholder" aria-label="Future supporting materials">
             <p className="portfolio-eyebrow">Next material to add</p>
             <p>
-              Add the confirmed LinkedIn profile URL when it is ready to publish. The Douban archive and seminar deck
-              are already available from the selected work page.
+              Additional finance evidence can be added as it becomes ready to publish. The LinkedIn profile, Douban
+              archive, and seminar deck are already available across the portfolio.
             </p>
           </aside>
         </div>
