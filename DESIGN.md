@@ -1,6 +1,6 @@
 ---
 name: "Personal Portfolio"
-description: "A placeholder-ready three-page personal portfolio with digital-paper styling, consistent character illustrations, and click-led navigation from profile to services to contact."
+description: "A three-page portfolio for Wang Hanzhi that presents finance cases, data-informed research, project execution, and contact details through a digital-paper visual system."
 colors:
   background: "oklch(0.992 0.002 95)"
   foreground: "oklch(0.18 0.004 80)"

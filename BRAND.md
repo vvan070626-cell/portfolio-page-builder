@@ -1,15 +1,15 @@
 ---
 name: "Personal Portfolio"
 slug: "personal-portfolio"
-one_liner: "A placeholder-ready three-page personal portfolio with digital-paper styling, consistent character illustrations, and click-led navigation from profile to services to contact."
+one_liner: "A three-page portfolio for Wang Hanzhi that presents finance cases, data-informed research, project execution, and contact details through a digital-paper visual system."
 audience: "Prospective clients, collaborators, and people evaluating the owner's work and capabilities."
 value_props:
-  - "Three real pages for profile, solutions, and contact"
-  - "Fixed navigation with active-page feedback and a mobile menu"
-  - "Clickable black navigation spots on solutions and contact that return directly to the profile"
-  - "A clickable lower-left footer spot that also returns to the profile from solutions and contact"
-  - "Click-led orange transition controls from profile to solutions and solutions to contact"
-  - "One long solutions page with services, features, FAQ, work placeholders, and principles"
+  - "Three real pages for profile, selected work, and contact"
+  - "CV-led positioning around finance, data, communication, and execution"
+  - "Quantified proof points for the HKSI case competition, Douban community, and prom finance role"
+  - "Two featured HKSI competition cases with commercial metrics and explicit PPT preview placeholders"
+  - "Supporting project stories for the entrepreneurial finance seminar, Douban eye-care community, and prom finance leadership"
+  - "Education, language, technical skill, and early leadership context"
 palette:
   - "oklch(0.992 0.002 95)"
   - "oklch(0.18 0.004 80)"
