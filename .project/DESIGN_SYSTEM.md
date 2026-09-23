@@ -28,8 +28,7 @@ Digital paper: an almost-white canvas, dense black typography, sparse black-line
 - Route changes use a restrained fade and vertical settle
 - Solutions scrolls naturally through its content sections
 - Navigation weight identifies the current page
+- The black navigation spot on solutions and contact is a direct home control with restrained hover and press feedback
+- Illustration white areas multiply into the paper canvas so their backgrounds remain visually seamless
 - Links use small opacity, color, or lift feedback
 - Optional movement is disabled under reduced-motion preferences
-- Navigation weight identifies the current page
-- The black navigation spot on solutions is a home control with a restrained expand-and-fade return cue
-- Links use small opacity, color, or lift feedback

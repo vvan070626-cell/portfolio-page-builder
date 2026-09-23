@@ -41,7 +41,7 @@ export function IllustratedHero({
           width={1200}
           height={896}
           priority
-          className="h-full w-full object-contain object-center"
+          className="h-full w-full object-contain object-center mix-blend-multiply"
           sizes="(min-width: 1024px) 500px, (min-width: 768px) 46vw, 88vw"
         />
       </div>
