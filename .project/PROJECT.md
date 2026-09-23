@@ -1,10 +1,10 @@
 <!-- OWNER: Build (with the user) · READERS: every agent · READ THIS FIRST -->
 # Personal Portfolio
 
-**One-liner:** A placeholder-ready three-page personal portfolio with digital-paper styling, consistent character illustrations, and click-led navigation from profile to services to contact.
+**One-liner:** A three-page portfolio for Wang Hanzhi that presents finance cases, data-informed research, project execution, and contact details through a digital-paper visual system.
 
 ## Goal
-Give the owner a presentable personal website whose identity, offer, and contact details can be replaced without changing the visual system.
+Help internship reviewers, competition collaborators, and project partners quickly understand Wang Hanzhi’s analytical range, strongest evidence, and ways to get in touch.
 
 ## Target users
 Prospective clients, collaborators, and people evaluating the owner's work and capabilities.
@@ -15,12 +15,19 @@ Prospective clients, collaborators, and people evaluating the owner's work and c
 - Repo: —
 
 ## What exists today
-- Three real pages for profile, solutions, and contact
+- Three real pages for profile, selected work, and contact
+- CV-led positioning around finance, data, communication, and execution
+- Quantified proof points for the HKSI case competition, Douban community, and prom finance role
+- Two featured HKSI competition cases with commercial metrics and explicit PPT preview placeholders
+- Supporting project stories for the entrepreneurial finance seminar, Douban eye-care community, and prom finance leadership
+- Education, language, technical skill, and early leadership context
+- Real email and phone details plus a downloadable CV
+- Explicit placeholders for future PPT slides, Douban URL, LinkedIn profile, and supporting evidence
 - Fixed navigation with active-page feedback and a mobile menu
 - Clickable black navigation spots on solutions and contact that return directly to the profile
 - A clickable lower-left footer spot that also returns to the profile from solutions and contact
 - Click-led orange transition controls from profile to solutions and solutions to contact
-- One long solutions page with services, features, FAQ, work placeholders, and principles
+- One long work page with case studies, evidence guidance, supporting projects, and experience
 - Three original black-line illustrations featuring a medium-short-haired woman
 - Illustration backgrounds visually blend into the near-white paper canvas without changing the line art
 - Identical illustration sizing and upper-right placement across all three pages

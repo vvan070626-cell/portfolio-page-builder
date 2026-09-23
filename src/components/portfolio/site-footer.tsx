@@ -10,7 +10,7 @@ export function SiteFooter() {
       >
         <span aria-hidden="true" />
       </Link>
-      <Link href="/solutions">Solutions</Link>
+      <Link href="/solutions">Work</Link>
       <Link href="/contact">Contact</Link>
     </footer>
   );

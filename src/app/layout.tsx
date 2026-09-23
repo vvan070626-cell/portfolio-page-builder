@@ -8,8 +8,8 @@ import "@fontsource/lato/900.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Your Name — Personal Portfolio",
-  description: "A placeholder-ready personal portfolio for an independent creative professional.",
+  title: "Wang Hanzhi — Personal Portfolio",
+  description: "Finance, data-informed research, presentations, and project work by Wang Hanzhi.",
 };
 
 export default function RootLayout({

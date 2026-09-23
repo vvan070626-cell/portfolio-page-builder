@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Menu, Search } from "lucide-react";
+import { Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -20,7 +20,7 @@ interface SiteNavigationProps {
 }
 
 const navigationItems = [
-  { href: "/solutions", label: "Solutions", page: "solutions" },
+  { href: "/solutions", label: "Work", page: "solutions" },
   { href: "/contact", label: "Contact", page: "contact" },
 ] as const;
 
@@ -35,7 +35,7 @@ export function SiteNavigation({ activePage }: SiteNavigationProps) {
             activePage === "home" && "font-bold",
           )}
         >
-          Your Name
+          Wang Hanzhi
         </Link>
 
         <nav className="hidden items-center gap-7 text-[20px] leading-none md:flex" aria-label="Primary navigation">
@@ -60,7 +60,6 @@ export function SiteNavigation({ activePage }: SiteNavigationProps) {
               {item.label}
             </Link>
           ))}
-          <Search size={22} strokeWidth={1.8} aria-hidden="true" />
         </nav>
 
         <div className="md:hidden">
@@ -74,8 +73,8 @@ export function SiteNavigation({ activePage }: SiteNavigationProps) {
             </SheetTrigger>
             <SheetContent side="right" className="w-[84%] border-l bg-background p-0 shadow-none">
               <SheetHeader className="border-b px-7 py-6 text-left">
-                <SheetTitle className="font-heading text-xl font-bold">Your Name</SheetTitle>
-                <SheetDescription>Portfolio navigation</SheetDescription>
+                <SheetTitle className="font-heading text-xl font-bold">Wang Hanzhi</SheetTitle>
+                <SheetDescription>Finance, data, and project work</SheetDescription>
               </SheetHeader>
               <nav className="flex flex-col px-7 py-8" aria-label="Mobile navigation">
                 <SheetClose render={<Link href="/" className="border-b py-5 text-2xl" />}>

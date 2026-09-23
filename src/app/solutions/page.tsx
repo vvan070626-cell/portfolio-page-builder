@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import { SolutionsPortfolioPage } from "@/components/portfolio/solutions-portfolio-page";
 
 export const metadata: Metadata = {
-  title: "Solutions — Your Name",
-  description: "Explore a placeholder-ready overview of strategy, design, and digital product services.",
+  title: "Selected Work — Wang Hanzhi",
+  description:
+    "Selected finance cases, research presentations, community work, and project leadership by Wang Hanzhi.",
 };
 
 export default function SolutionsPage() {

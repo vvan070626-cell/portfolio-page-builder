@@ -220,7 +220,13 @@ body {
 .portfolio-work-grid h3,
 .portfolio-principles-section h2,
 .portfolio-principles-grid h3,
-.portfolio-contact-grid h2 {
+.portfolio-contact-grid h2,
+.portfolio-profile-note h2,
+.portfolio-case-section h2,
+.portfolio-case-card h3,
+.portfolio-experience-section h2,
+.portfolio-experience-grid h3,
+.portfolio-contact-intro h2 {
   font-family: var(--font-heading);
 }
 
@@ -864,4 +870,419 @@ body {
 
 .portfolio-home-spot-static {
   cursor: default;
+}
+
+.portfolio-eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--muted-foreground);
+  font-family: var(--font-mono);
+  font-size: 0.76rem !important;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  line-height: 1.4 !important;
+  text-transform: uppercase;
+}
+
+.portfolio-capability-grid article {
+  min-width: 0;
+  border-top: 1px solid var(--foreground);
+  padding-top: 1.2rem;
+}
+
+.portfolio-capability-grid h2 {
+  margin-bottom: 1.2rem;
+}
+
+.portfolio-capability-grid article > p:last-child {
+  font-size: 1.08rem;
+  line-height: 1.62;
+}
+
+.portfolio-proof-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 6.5rem;
+  border-block: 1px solid var(--foreground);
+}
+
+.portfolio-proof-strip article {
+  min-width: 0;
+  padding: 1.7rem 1.4rem 1.8rem;
+}
+
+.portfolio-proof-strip article + article {
+  border-left: 1px solid var(--border);
+}
+
+.portfolio-proof-strip strong,
+.portfolio-proof-strip span {
+  display: block;
+}
+
+.portfolio-proof-strip strong {
+  font-family: var(--font-heading);
+  font-size: clamp(1.45rem, 2.3vw, 2rem);
+  font-weight: 850;
+  letter-spacing: -0.045em;
+}
+
+.portfolio-proof-strip span {
+  margin-top: 0.55rem;
+  color: var(--muted-foreground);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.portfolio-profile-note {
+  max-width: 51rem;
+  padding-top: 7rem;
+}
+
+.portfolio-profile-note h2,
+.portfolio-case-section h2,
+.portfolio-experience-section h2,
+.portfolio-contact-intro h2 {
+  margin: 0;
+  font-size: clamp(2.35rem, 4vw, 3.55rem);
+  font-weight: 850;
+  letter-spacing: -0.055em;
+  line-height: 1.04;
+}
+
+.portfolio-profile-note > p:last-child,
+.portfolio-contact-intro > p {
+  max-width: 47rem;
+  margin: 2rem 0 0;
+  font-size: 1.14rem;
+  line-height: 1.65;
+}
+
+.portfolio-case-section {
+  padding-bottom: 8rem;
+}
+
+.portfolio-case-section > h2 {
+  max-width: 52rem;
+}
+
+.portfolio-case-section .portfolio-section-intro {
+  max-width: 49rem;
+  margin-top: 2rem;
+}
+
+.portfolio-case-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.2rem;
+  margin-top: 4rem;
+}
+
+.portfolio-case-card {
+  min-width: 0;
+  border: 1px solid var(--foreground);
+  padding: clamp(1.5rem, 3vw, 2.4rem);
+}
+
+.portfolio-case-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--muted-foreground);
+}
+
+.portfolio-case-card-heading p {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.055em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.portfolio-case-card h3 {
+  max-width: 28rem;
+  margin: 2.8rem 0 1.2rem;
+  font-size: clamp(1.8rem, 3vw, 2.45rem);
+  font-weight: 850;
+  letter-spacing: -0.055em;
+  line-height: 1.04;
+}
+
+.portfolio-case-card > p {
+  margin: 0;
+  line-height: 1.62;
+}
+
+.portfolio-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}
+
+.portfolio-metric-grid strong,
+.portfolio-metric-grid span {
+  display: block;
+}
+
+.portfolio-metric-grid strong {
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  font-weight: 850;
+  letter-spacing: -0.045em;
+}
+
+.portfolio-metric-grid span {
+  margin-top: 0.35rem;
+  color: var(--muted-foreground);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.portfolio-case-note {
+  margin-top: 2rem !important;
+  color: var(--muted-foreground);
+  font-size: 0.88rem;
+}
+
+.portfolio-artifact-placeholder {
+  display: grid;
+  min-height: 10rem;
+  align-content: end;
+  gap: 0.45rem;
+  margin-top: 2rem;
+  border: 1px dashed color-mix(in oklch, var(--foreground), transparent 45%);
+  padding: 1.15rem;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0 1.6rem,
+    color-mix(in oklch, var(--border), transparent 35%) 1.6rem 1.67rem
+  );
+}
+
+.portfolio-artifact-placeholder span,
+.portfolio-artifact-placeholder small {
+  width: fit-content;
+  background: var(--background);
+  padding-right: 0.35rem;
+}
+
+.portfolio-artifact-placeholder span {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.portfolio-artifact-placeholder small {
+  color: var(--muted-foreground);
+  font-size: 0.78rem;
+}
+
+.portfolio-work-band {
+  border-block: 1px solid var(--border);
+}
+
+.portfolio-work-band .portfolio-eyebrow {
+  color: var(--foreground);
+}
+
+.portfolio-work-grid article {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  border-top: 1px solid var(--foreground);
+  padding-top: 1.2rem;
+}
+
+.portfolio-work-icon {
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  margin-bottom: 2.5rem;
+  border: 1px solid var(--foreground);
+  border-radius: 999px;
+}
+
+.portfolio-work-grid h3 {
+  margin-top: 0;
+  font-size: 1.55rem;
+  letter-spacing: -0.04em;
+}
+
+.portfolio-work-grid article > p:not(.portfolio-eyebrow) {
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.portfolio-work-detail {
+  margin-top: 1.4rem !important;
+  color: var(--foreground) !important;
+  font-weight: 700;
+}
+
+.portfolio-artifact-placeholder-compact {
+  min-height: 7.5rem;
+  margin-top: auto;
+  transform: translateY(2rem);
+}
+
+.portfolio-artifact-placeholder-compact span {
+  background: var(--muted);
+  line-height: 1.55;
+}
+
+.portfolio-faq-section {
+  padding-top: 8rem;
+}
+
+.portfolio-experience-section {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.portfolio-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem;
+  margin-top: 3.5rem;
+}
+
+.portfolio-experience-grid article {
+  min-width: 0;
+  border-top: 1px solid var(--foreground);
+  padding-top: 1.4rem;
+}
+
+.portfolio-experience-grid svg {
+  margin-bottom: 2.5rem;
+}
+
+.portfolio-experience-grid h3 {
+  margin: 0 0 1rem;
+  font-size: 1.55rem;
+  font-weight: 850;
+  letter-spacing: -0.04em;
+}
+
+.portfolio-experience-grid article > p:last-child {
+  margin: 0;
+  color: var(--muted-foreground);
+  line-height: 1.62;
+}
+
+.portfolio-contact-intro {
+  max-width: 54rem;
+  padding: 1.5rem 0 5rem;
+}
+
+.portfolio-location-note {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 2rem;
+  font-weight: 700;
+}
+
+.portfolio-contact-grid {
+  border-top: 1px solid var(--foreground);
+  padding-top: 2.2rem;
+}
+
+.portfolio-contact-placeholder {
+  max-width: 49rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}
+
+.portfolio-contact-placeholder > p:last-child {
+  margin: 0;
+  color: var(--muted-foreground);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .portfolio-proof-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .portfolio-proof-strip article:nth-child(3) {
+    border-left: 0;
+  }
+
+  .portfolio-proof-strip article:nth-child(n + 3) {
+    border-top: 1px solid var(--border);
+  }
+
+  .portfolio-case-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-work-grid {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .portfolio-artifact-placeholder-compact {
+    margin-top: 2rem;
+    transform: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .portfolio-proof-strip {
+    grid-template-columns: 1fr;
+    margin-top: 4.5rem;
+  }
+
+  .portfolio-proof-strip article + article,
+  .portfolio-proof-strip article:nth-child(3) {
+    border-left: 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .portfolio-profile-note {
+    padding-top: 5rem;
+  }
+
+  .portfolio-case-section {
+    padding-bottom: 5rem;
+  }
+
+  .portfolio-case-card {
+    padding: 1.35rem;
+  }
+
+  .portfolio-case-card h3 {
+    margin-top: 2rem;
+  }
+
+  .portfolio-metric-grid,
+  .portfolio-experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-metric-grid {
+    gap: 1.2rem;
+  }
+
+  .portfolio-artifact-placeholder {
+    min-height: 8rem;
+  }
+
+  .portfolio-faq-section {
+    padding-top: 5rem;
+  }
+
+  .portfolio-experience-grid {
+    gap: 3rem;
+  }
+
+  .portfolio-contact-intro {
+    padding-bottom: 3.5rem;
+  }
 }

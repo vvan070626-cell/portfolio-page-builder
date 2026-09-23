@@ -6,7 +6,7 @@ interface IllustratedHeroProps {
   illustration: string;
   illustrationAlt: string;
   titleAccent?: boolean;
-  homeTitle?: boolean;
+  titleLines?: string[];
 }
 
 export function IllustratedHero({
@@ -15,16 +15,16 @@ export function IllustratedHero({
   illustration,
   illustrationAlt,
   titleAccent = false,
-  homeTitle = false,
+  titleLines,
 }: IllustratedHeroProps) {
   return (
     <section className="portfolio-hero" aria-labelledby="page-title">
       <div className="portfolio-hero-copy">
-        {homeTitle ? (
+        {titleLines ? (
           <h1 id="page-title" className="portfolio-home-title">
-            <span>Independent</span>
-            <span>digital</span>
-            <span>practice</span>
+            {titleLines.map((line) => (
+              <span key={line}>{line}</span>
+            ))}
           </h1>
         ) : (
           <h1 id="page-title" className="portfolio-page-title">
