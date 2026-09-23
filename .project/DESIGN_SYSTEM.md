@@ -29,6 +29,7 @@ Digital paper: an almost-white canvas, dense black typography, sparse black-line
 - Solutions scrolls naturally through its content sections
 - Navigation weight identifies the current page
 - The black navigation spot on solutions and contact is a direct home control with restrained hover and press feedback
+- The lower-left footer spot is a second home control using the same hover, press, and focus language
 - Illustration white areas multiply into the paper canvas so their backgrounds remain visually seamless
 - Links use small opacity, color, or lift feedback
 - Optional movement is disabled under reduced-motion preferences

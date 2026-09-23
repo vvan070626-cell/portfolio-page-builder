@@ -18,6 +18,7 @@ Prospective clients, collaborators, and people evaluating the owner's work and c
 - Three real pages for profile, solutions, and contact
 - Fixed navigation with active-page feedback and a mobile menu
 - Clickable black navigation spots on solutions and contact that return directly to the profile
+- A clickable lower-left footer spot that also returns to the profile from solutions and contact
 - Click-led orange transition controls from profile to solutions and solutions to contact
 - One long solutions page with services, features, FAQ, work placeholders, and principles
 - Three original black-line illustrations featuring a medium-short-haired woman
